@@ -18,6 +18,7 @@ header {
   background: var(--primaria);
   padding: 1rem;
   text-align: center;
+
 }
 
 .logo {
@@ -45,21 +46,23 @@ header {
 }
 
 button {
+  width: auto;
+  padding: 20px 50px;
+  border: 3px solid #F5A623; /* amarelo da marca */
+  color: #F5A623;
   background-color: transparent;
-  color: var(--secundaria); /* Cor da borda e do texto */
-  border: 4px solid var(--secundaria);
-  padding: 1rem 2rem;
-  border-radius: 2px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 10px;
+  align-self: center; /* alinha no centro */
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: var(--secundaria);
+ button:hover {
+  background-color: #F5A623;
   color: white;
 }
-
 .video img {
   max-width: 100%;
   border-radius: 12px;
