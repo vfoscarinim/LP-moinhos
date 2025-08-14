@@ -21,7 +21,7 @@ document.getElementById('leadForm').addEventListener('submit', async function (e
     if (result.status === 'sucesso') {
       const nomeEncoded = encodeURIComponent(data.nome);
       const rendaEncoded = encodeURIComponent(data.renda);
-      window.location.href = `https://wa.me/5551993062650?text=Olá. Meu nome é ${nomeEncoded} e tenho interesse em conhecer o método P.A.R. Minha meta de renda é ${rendaEncoded}. Podemos conversar?`;
+      window.location.href = `https://wa.me/+555132553703?text=Olá, preenchi o formulário sobre o método P.A.R e gostaria de saber mais. Podemos conversar?`;
     } else {
       alert("Erro ao enviar os dados. Tente novamente.");
       console.error(result); // log do erro vindo da API
