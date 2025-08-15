@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transforme Investimentos em Renda</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,29 +19,32 @@
     </div>
   </section>
 
-  <section id="formulario" class="formulario">
+  <section id="formulario" class="formulario" >
     <h2>Preencha para receber atendimento personalizado</h2>
-    <form id="leadForm">
+    <form id="leadForm" action="https://api.sheetmonkey.io/form/aFezzpX1nm2NfPSRgjyGTg" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu email" required />
       
       <select name="faixa" required>
         <option value="">Quanto você tem investido?</option>
-        <option value="<300k">Menos de R$ 300 mil</option>
-        <option value="<500k">R$ 300 mil – R$ 500 mil</option>
-        <option value="<1MM">R$ 500 mil – R$ 1 milhão</option>
-        <option value="<5MM">R$ 1 milhão – R$ 5 milhões</option>
-        <option value=">5MM">Mais de R$ 5 milhões</option>
+        <option value="menos 300k">Menos de R$ 300 mil</option>
+        <option value="300k-500k">R$ 300 mil – R$ 500 mil</option>
+        <option value="500k-1MM">R$ 500 mil – R$ 1 milhão</option>
+        <option value="1MM-5MM">R$ 1 milhão – R$ 5 milhões</option>
+        <option value="mais 5MM">Mais de R$ 5 milhões</option>
       </select>
 
       <select name="renda" required>
         <option value="">Qual sua meta de renda mensal?</option>
-        <option value="<5k">Menos de R$ 5 mil</option>
+        <option value="menos 5k">Menos de R$ 5 mil</option>
         <option value="5k–10k">R$ 5 mil – R$ 10 mil</option>
         <option value="10k–15k">R$ 10 mil – R$ 15 mil</option>
         <option value="15k–20k">R$ 15 mil – R$ 20 mil</option>
-        <option value=">20k">Mais de R$ 20 mil</option>
+        <option value="mais 20k">Mais de R$ 20 mil</option>
       </select>
+
+      <!-- Campo oculto para data/hora -->
+      <input type="hidden" name="dataHora" id="data/Hora">
 
       <button type="submit">Enviar e ir para o WhatsApp</button>
       <p class="seguro">🔒 Seus dados são 100% confidenciais.</p>
